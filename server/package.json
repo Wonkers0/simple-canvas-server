@@ -1,0 +1,26 @@
+{
+   "name": "server",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "clean": "rm -r prod",
+      "build": "npx tsc",
+      "devstart": "nodemon ./prod/index.js",
+      "start": "node ./prod/index.js",
+      "dev": "npx tsc && npm run devstart",
+      "prod": "npm run build && npm run start"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "@types/uuid": "^9.0.2",
+      "@types/ws": "^8.5.5",
+      "ws": "^8.13.0"
+   },
+   "devDependencies": {
+      "nodemon": "^3.0.1",
+      "typescript": "^5.1.6"
+   }
+}
